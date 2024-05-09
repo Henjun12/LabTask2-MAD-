@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewEnglishLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English Word:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEnglishLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Enter English word"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textViewBahasaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEnglish"
+        android:layout_marginTop="16dp"
+        android:text="Bahasa Malaysia Translation:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextBahasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBahasaLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Bahasa Malaysia translation"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBahasa"
+        android:layout_marginTop="16dp"
+        android:text="Add Word"/>
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_marginTop="16dp"
+        android:text="View Dictionary"/>
+</RelativeLayout>
